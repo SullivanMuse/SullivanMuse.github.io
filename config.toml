@@ -1,0 +1,4 @@
+baseURL = 'https://sullivanmuse.github.io'
+languageCode = 'en-us'
+title = 'Test Site'
+theme = 'ananke'
