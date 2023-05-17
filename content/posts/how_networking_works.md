@@ -98,7 +98,11 @@ draft: false
         - Provides data integrity checking with checksums
     - TCP
         - Provides ordering, acknowledgement, and pacing
-- Application (domain-specific)
+- Application (very domain-specific)
+    - More specifically
+        - Session layer (maintains connections, control ports and sessions)
+        - Presentation layer (encryption, data formatting)
+        - Application layer (human-computer interaction)
     - Runs on a certain port
     - Has a TCP or UDP socket
     - Assumes reliable (or unreliable) bytestream between two applications running on different hosts
