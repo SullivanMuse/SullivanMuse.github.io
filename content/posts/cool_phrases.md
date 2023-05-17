@@ -1,7 +1,7 @@
 ---
 title: "Cool_phrases"
 date: 2023-05-15T23:19:46-05:00
-draft: true
+draft: false
 ---
 
 "Momento mori" - Remember that you will die.
