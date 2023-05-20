@@ -286,6 +286,37 @@ bookId=12345&author=Tan+Ah+Teck -- Request message body
         - Receiver must now also keep buffer
         - Receiver sends ACK for each packet
         - Window length must be less than half the maximum sequence number
+- Real procedure
+    - In addition to what the better procedures do, real TCP has a few extra features and requires that two hosts setup a *connection* before exchanging data in order to establish certain things
+        - Choose a *random* initial sequence number
+            - New packets are not confused with retransmission from prior connection
+            - Attackers cannot easily insert fraudulent packets
+        - Also allows ACKs to piggy back on sends in the opposite direction
+        - Sequence number represents byte offset instead of packet offset
+        - Uses cumulative ACKs
+        - Receiver may or may not buffer out-of-order segments
+        - Keeps one timer for oldest un-ACKed segment
+        - Retransmit that one segment when timer expires
+        - Ideal value of timer?
+            - Slightly longer than expected round-trip time
+            - TCP keeps track of recent RTTs by constantly measuring delay between every transmission and its ACK
+            - Exponentially-weighted moving average of RTTs is typically used
+                - EstRTT = (1 - alpha) * EstRTT + alpha * SampleRTT
+                - alpha = 0.125 = 1/8 typically
+            - For low jitter networks, we can choose a timeout just slightly above RTT
+            - For high jitter networks, we can choose a timeout much higher than RTT
+            - Use exponentially-weighted moving average of deviation in RTT (jitter)
+                - DevRTT = (1-beta)*DevRTT + beta*|SampleRTT - EstRTT|
+            - TimeoutInterval = EstRTT + 4 * DevRTT
+
+Code understandability metric from vocabulary perspective
+- A function is more understandable if the verbs are conceptually close (that is, they are often used together)
+- A function is more understandable if the verbs are few (conceptual minimalism)
+- A function is more understandable if control flow is simple (cyclomatic complexity)
+- A function is more understandable if state is minimal (purity)
+- A function is more understandable if the input (domain) is small
+- A function is more understandable if the output (codomain) is small
+- A function is more understandable if dependencies (vocabulary) are minimal
 
 ### UDP
 
