@@ -369,3 +369,5 @@ Code understandability metric from vocabulary perspective
 ## References
 
 Some of this post is remixed from a [lecture series](https://youtube.com/playlist?list=PLWl7jvxH18r3nnotitKkyAjq268PQGc0-) by [Steve Tarzia](https://www.youtube.com/@SteveTarzia) for the CS-340 Intro to Computing Networking course at Northwestern University.
+
+[A related course, MIT 6.858](https://www.youtube.com/playlist?list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh) on Compute Systems Security in Fall of 2014.
