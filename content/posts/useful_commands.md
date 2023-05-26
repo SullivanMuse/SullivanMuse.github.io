@@ -160,5 +160,6 @@ A better explanation than mine can [be had](https://www.hackinglinuxexposed.com/
 ## System Information
 
 - `lshw -short` will show you basic information about what hardware you are running. You should run it with `sudo` if you want the maximum amount of information.
+- `uname -m` will show your instruction set
 - `ps -aux` print information about running processes
 - `tty` print file name of terminal connected to stdout
