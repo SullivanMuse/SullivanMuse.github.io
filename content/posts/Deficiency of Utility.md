@@ -1,5 +1,5 @@
 ---
-title: "Deficiency of utility"
+title: "Deficiency of Utility"
 date: 2023-05-15T22:52:14-05:00
 draft: false
 ---

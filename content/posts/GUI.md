@@ -1,5 +1,5 @@
 ---
-title: "Gui"
+title: "GUI"
 date: 2023-05-26T07:31:12-05:00
 draft: true
 ---

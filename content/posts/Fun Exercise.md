@@ -1,5 +1,5 @@
 ---
-title: "A fun creative exercise"
+title: "Fun Exercise"
 date: 2023-05-15T23:04:47-05:00
 draft: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Cool_phrases"
+title: "Cool Phrases"
 date: 2023-05-15T23:19:46-05:00
 draft: false
 ---
