@@ -164,3 +164,4 @@ A better explanation than mine can [be had](https://www.hackinglinuxexposed.com/
 - `uname -m` will show your instruction set
 - `ps -aux` print information about running processes
 - `tty` print file name of terminal connected to stdout
+- `lsusb` list usb device info

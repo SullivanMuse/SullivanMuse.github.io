@@ -1,7 +1,7 @@
 ---
 title: "Media_to_see"
 date: 2023-05-26T00:43:45-05:00
-draft: true
+draft: false
 ---
 
 Media I recommend. Very incomplete.
